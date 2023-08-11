@@ -1,0 +1,17 @@
+import math
+
+class punto:
+    def __init__(self,x,y) -> None:
+        self.x = x
+        self.y = y
+
+    def mostrar(self, x, y):
+        print(f"coordenadas del punto {x},{y}")
+
+    def mover(self, x_nueva, y_nueva):
+        self.x = x_nueva
+        self.y = y_nueva
+
+    def calcular_distancia(self, otro_punto):
+        distancia = math.dist((self.x, self.y), (otro_punto.x , otro_punto.y))
+        return distancia

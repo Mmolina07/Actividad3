@@ -3,12 +3,6 @@ class CuentaBancaria:
         self.numero_cuenta = numero_cuenta
         self.propietarios = propietarios
         self.balance = balance
-
-class CuentaBancaria:
-    def __init__(self, numero_cuenta, propietarios, balance):
-        self.numero_cuenta = numero_cuenta
-        self.propietarios = propietarios
-        self.balance = balance
     
     def depositar(self, monto):
         if monto > 0:
